@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu burger</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquerie.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body onresize="changeSize()">
+    <header>
+        <h1>some site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menudo">
+            <ul>
+                <li><a href="#">LINK1</a></li>
+                <li><a href="#">LINK2</a></li>
+                <li><a href="#">LINK3</a></li>
+                <li><a href="#">LINK4</a></li>
+            </ul>
+        </menu>
+    </header>  
+    
+    <main>
+        <article>
+            <h2>Testing media queries</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non veniam id neque qui nam quos accusamus fugit temporibus modi, reiciendis mollitia enim quibusdam rerum voluptatum sed soluta consectetur minima nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis sunt sequi consequuntur culpa aut numquam quisquam reprehenderit obcaecati quae vero, repudiandae officiis suscipit alias dignissimos dolorem facilis provident totam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia similique ipsa a, repellat, est consequuntur illo autem praesentium voluptatibus quas molestias, tempora magni aperiam. Tempore eligendi reiciendis nam hic commodi!
+            </p>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quis, numquam, eligendi quam sit labore dolorem atque cupiditate fugiat aperiam error cumque ad laudantium incidunt, reiciendis distinctio tenetur quasi praesentium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis tempore quas ut alias, nihil temporibus rem dolor amet suscipit ipsa nesciunt quod et, earum maxime. Repellendus molestiae quis illum debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti a vero libero maiores quos expedita eaque ea et blanditiis quibusdam illo recusandae quas vel eveniet aliquam doloribus, eius cupiditate?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium quas expedita temporibus fugiat facere vero culpa aliquam rerum aperiam ullam ipsa et fuga nihil optio, exercitationem numquam sint ipsam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sed, quos alias consectetur optio dolor porro a dolores libero velit illo fugit, deleniti nam delectus cupiditate fuga. Provident, quod nam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod odio facilis unde, reprehenderit, laudantium adipisci nulla eligendi, animi accusantium iste inventore molestias consequuntur dolorem. Deserunt at ex magnam possimus consequuntur?
+            </p>
+
+        </article>
+    </main>
+
+    <script>
+        function changeSize(){
+            if (window.innerWidth >= 768){
+                menudo.style.display = 'block'
+            } else{
+                menudo.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menudo.style.display == 'block') {
+                menudo.style.display = 'none'
+            } else {
+                menudo.style.display = 'block'
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
