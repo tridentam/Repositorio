@@ -33,11 +33,11 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
     transition: width 1.3s, height 1.3s ;
     transition-timing-function: ease;
+    transform: translate(-50%,-50%);
 } 
 
 section#login > div#image{
@@ -50,4 +50,87 @@ section#login > div#image{
 section#login > div#form{
     padding: 10px;
     display: block;
+}
+
+div#form > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p{
+    font-size: 0.8em;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #103b64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form >input[type=submit]:hover{
+    background-color: #0E3574;
+    cursor: pointer;
+}
+
+form > a.btn{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #30E7FE;
+    border-radius: 5px;
+    border: 1px solid #0E3574;
+    text-decoration: none;
+    color: #0E3574;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.material-symbols-outlined{
+    font-size: 9em;
+}
+
+form > a.btn:hover{
+    background-color: #0E3574;
+    color: white;
+    height: 40px;
+}
+
+form >div.field{
+    background-color: #237CD0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    border: 2px solid #237CD0;
+}
+
+form label{
+    display: none;
+}
+
+div.field > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    transform: translateY(-3px);
+}
+
+div.field > input{
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 98%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-12px);
 }
